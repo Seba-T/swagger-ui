@@ -3,15 +3,16 @@
 # Parameter Expansion: http://stackoverflow.com/questions/6393551/what-is-the-meaning-of-0-in-a-bash-script
 cd "${0%/*}"
 
-# Get UI version
-UI_VERSION=$(node -p "require('../package.json').version")
+# # Get UI version
+# UI_VERSION=$(node -p "require('../package.json').version")
 
-# Replace our version placeholder with UI's version
-sed -i "s|\$\$VERSION|$UI_VERSION|g" package.json
+# # Replace our version placeholder with UI's version
+# sed -i "s|\$\$VERSION|$UI_VERSION|g" package.json
 
 # Copy UI's dist files to our directory
 cp ../dist/* .
 
+export PUBLISH_DIST="true"
 # Copy LICENSE & NOTICE to our directory
 cp ../LICENSE .
 cp ../NOTICE .
