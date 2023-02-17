@@ -1,3 +1,8 @@
+## This is a fork of [Swagger-UI](https://github.com/swagger-api/swagger-ui) as a small change was needed for a university project, 
+## so we deployed our custom version on npm
+
+## All 
+
 # Swagger UI Dist
 [![NPM version](https://badge.fury.io/js/swagger-ui-dist.svg)](http://badge.fury.io/js/swagger-ui-dist)
 
